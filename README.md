@@ -1,8 +1,46 @@
 # Gestion des Heures Travaillées
 
-Application complète pour gérer et calculer les heures travaillées, avec support pour le travail de jour et de nuit, calcul automatique des tarifs et diverses options d'exportation.
+Une application simple pour gérer et suivre vos heures de travail.
 
-![Capture d'écran de l'application](screenshot.png)
+## Installation
+
+1. Assurez-vous d'avoir Python installé sur votre ordinateur
+2. Installez les dépendances requises :
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Utilisation
+
+1. Lancez l'application :
+   ```
+   python work_hours_improved.py
+   ```
+
+2. Fonctionnalités principales :
+   - Ajouter une nouvelle entrée : Cliquez sur "➕ Nouvelle entrée"
+   - Modifier une entrée : Sélectionnez une entrée et cliquez sur "✏️ Modifier"
+   - Supprimer une entrée : Sélectionnez une entrée et cliquez sur "🗑️ Supprimer"
+   - Exporter les données : Cliquez sur "📤 Exporter"
+   - Vérifier les durées : Cliquez sur "🔍 Vérifier les durées"
+   - Voir les statistiques : Cliquez sur "📊 Statistiques"
+
+3. Pour chaque entrée, vous pouvez :
+   - Définir la date et l'heure de début
+   - Définir la date et l'heure de fin
+   - Ajouter une pause (optionnel)
+   - Choisir une catégorie de travail
+   - Définir un tarif horaire
+
+4. Les données sont automatiquement sauvegardées dans un fichier `work_hours_data.json`
+
+## Raccourcis clavier
+
+- Ctrl + N : Nouvelle entrée
+- Ctrl + S : Sauvegarder
+- Ctrl + D : Supprimer l'entrée sélectionnée
+- Ctrl + E : Exporter
+- Ctrl + T : Changer le thème (clair/sombre)
 
 ## Fonctionnalités
 
@@ -28,65 +66,6 @@ Application complète pour gérer et calculer les heures travaillées, avec supp
   - Format Excel (.xlsx)
   - Format PDF (.pdf)
   - Format image (.png)
-
-## Installation
-
-### Prérequis
-
-L'application nécessite Python 3.6 ou supérieur et plusieurs bibliothèques externes.
-
-```bash
-# Installer les dépendances requises
-pip install tkcalendar pandas pillow reportlab customtkinter
-```
-
-### Cloner le dépôt
-
-```bash
-git clone https://github.com/votre-username/gestion-heures-travaillees.git
-cd gestion-heures-travaillees
-```
-
-### Exécution
-
-```bash
-python app.py
-```
-
-## Guide d'utilisation
-
-### Configuration
-
-1. Choisissez le type de travail (Journée ou Nuit)
-2. Définissez le taux horaire en euros
-
-### Ajout d'une entrée
-
-1. Sélectionnez la date de début
-2. Pour le travail de nuit, la date de fin sera automatiquement le jour suivant
-3. Entrez l'heure de début et l'heure de fin
-4. Cliquez sur "Ajouter"
-
-### Modification d'une entrée
-
-1. Double-cliquez sur une entrée existante dans le tableau
-2. Modifiez les valeurs selon vos besoins
-3. Cliquez sur "Mettre à jour" pour sauvegarder les modifications ou "Annuler" pour revenir en arrière
-
-### Filtrage des données
-
-1. Dans la section "Résumé", utilisez les champs "Du" et "Au" pour définir une plage de dates
-2. Cliquez sur "Filtrer" pour afficher uniquement les entrées correspondantes
-3. Cliquez sur "Réinitialiser" pour afficher toutes les entrées
-
-### Exportation des données
-
-1. Cliquez sur le bouton "Exporter"
-2. Choisissez le format d'exportation souhaité :
-   - Excel (.xlsx) - Pour les analyses et calculs
-   - PDF (.pdf) - Pour l'impression et le partage formel
-   - Image (.png) - Pour un aperçu rapide
-3. Sélectionnez l'emplacement où sauvegarder le fichier
 
 ## Structure du code
 
